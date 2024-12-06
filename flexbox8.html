@@ -1,277 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>MiroFlexbox8</title>
-  
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    
-    body {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding: 5px;
-      height: calc(100vh - 10px);
-    }
-    
-    nav, main, aside, footer {
-      border: 1px solid black;
-    }
-    
-    nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .navcont1 {
-      display: flex;
-      justify-content: space-between;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navcont2 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navredbox {
-      background-color: red;
-      height: 30px;
-      width: 30px;
-    }
-    
-    .navbigbox {
-      background-color: red;
-      height: 30px;
-      width: 60px;
-    }
-    
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      flex-grow: 1;
-    }
-    
-    main {
-      display: flex;
-      flex-grow: 1;
-      gap: 5px;
-      padding: 5px;
-    }
-    
-    .maincont1, .maincont2 {
-      border: 1px solid black;
-    }
-    
-    .maincont1 {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      height: 460px;
-      width: 250px;
-      gap: 5px;
-      padding: 5px;
-    }
-    
-    .mainbox1 {
-      height: 85px;
-      border: 1px solid black;
-      width: 85px;
-    }
-    
-    .maincont1bx {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 5px;
-    }
-    
-    .mainbx2 {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-  
-    .maincont2 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      justify-content: center;
-      height: 460px;
-      width: 250px;
-      gap: 50px;
-      padding: 5px;
-    }
-    
-     .mainbox2 {
-   height: 150px;
-   border: 1px solid black;
-   width: 200px;
- }
-    
-    aside {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 4px;
-    }
-    
-    .asideitem {
-      border: 1px solid black;
-      height: 25px;
-      width: 15vw;
-    }
-    
-    footer {
-      display: flex;
-      flex-direction: column;
-      padding: 4px;
-    }
-    
-    .footer1 {
-      display: flex;
-      gap: 4px;
-      padding: 4px;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    
-    .footercont1 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .footer1redbox {
-      background-color: red;
-      height: 40px;
-      width: 40px;
-    }
-    
-    .footer2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .footercont2 {
-      display: flex;
-      gap: 5px;
-    }
-    
-    .footer2boxes {
-      display: flex;
-      flex-direction: row;
-      gap: 4px;
-    }
-    
-    .footer2redbox {
-      background-color: red;
-      height: 20px;
-      width: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIROFLEXBOX8</title>
 </head>
+<style>
+     * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            height: calc(100vh - 4px);
+            overflow: hidden;
+        }
+        nav, main, aside, footer {
+            border: 1px solid black;
+        
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            padding: 3px;
+            gap: 3px;
+            justify-content: space-between;
+        }
+        .ncont1 {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            align-items: center;
+        }
+        .nredbox1 {
+            background-color: red;
+            height: 30px;
+            width: 30px;
+        }
+        .ncont2{
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            justify-content: flex-end;
+        }
+        .nredbox2 {
+            background-color: red;
+            height: 30px;
+            width: 55px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 4px;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            flex-grow: 1;
+           
+        }
+        .mc2pcont1{
+            flex-direction: column;
+        }
+       
+        .mcont1 {
+            border: 1px solid black;
+            display: flex;
+            gap: 4px;
+            width: 50%;
+            padding: 4px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 4px;
+            align-content: flex-start;
+            
+        }
+        .mc1boxes{
+            border: 1px solid black;
+            height: 50px;
+            width: 65px;
 
-<body>  
-<nav>
-  <div class="navcont1">
-    <div class="navredbox"></div>
-    <div>FLEXBOX</div>
-  </div>
-  
-  <div class="navcont2">
-    <div class="navbigbox"></div>
-    <div class="navbigbox"></div>
-  </div>
-</nav>
+        }
+        .mcont2 {
+            border: 1px solid black;
+            display: flex;
+            width: 50%;
+            gap: 4px;
+            padding: 5px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            margin: 4px;
+            justify-content: space-around;
+            
 
-<div class="container">
-  <main>
-    <div class="maincont1">
-      <div class="maincont1bx">
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      <div class="mainbox1"></div>
-      </div>
+        }
+        .mc2boxes{
+            border: 1px solid black;
+            height: 20vh;
+            width: 14vw;
+            margin: 5px;
+
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .acbox{
+            border: 1px solid black;
+            width: 15vw;
+            height: 25px;
+        }
+
+        footer{
+        display: flex;
+        gap: 2px;
+        padding: 2px;
+        flex-direction: column;
+        justify-content: center;
+
+         }
+      .fparent{
+        display: flex;
+            
+            align-items: center;
+         }
+      .fbox1{
+        background-color: red;
+        width: 30px;
+        height: 30px;
+         }
+         
+      .fthird{
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        padding: 2px;
+      }
+      .fbox2{
+        background-color: red;
+        width: 15px;
+        height: 15px;
+      }
+    .ftext{
+        display: flex;
+        justify-content: center;  
+
+    }
+</style>
+<body>
+    <nav>
+        <div class="ncont1">
+            <div class="nredbox1"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div class="ncont2">
+            <div class="nredbox2"></div>
+            <div class="nredbox2"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="mcont1">
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div> 
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                <div class="mc1boxes"></div>
+                
+            </div>
+            <div class="mcont2">
+                <div class="mc2pcont1">
+                    <div class="mc2boxes"></div>
+                    <div class="mc2boxes"></div>
+                </div>
+                <div class="mc2pcont2">
+                    <div class="mc2boxes"></div>
+                    <div class="mc2boxes"></div>
+                </div>
+                
+                
+        </div>
+        </main>
+        <aside>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+                <div class="acbox"></div>
+        </aside>
     </div>
+    <footer>
+        <div class="fparent">
+            <div class="fbox1"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div><hr></div>
     
-    <div class="maincont2">
-      <div class="mainbx2">
-      <div class="mainbox2"></div>
-      <div class="mainbox2"></div>
-      </div>
-      <div class="mainbx2">
-      <div class="mainbox2"></div>
-      <div class="mainbox2"></div>
-      </div>
+        <div class="fthird">
+            <div class="fbox2"></div>
+            <div class="fbox2"></div>
+            <div class="fbox2"></div>
+            <div class="fbox2"></div>
+            <div class="fbox2"></div>
+        </div>
+      
+        <div class="ftext">©Copyright All rights reserved</div>
     </div>
-  </main>
-  <aside>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-  </aside>
-</div>
-
-<footer>
-  <div class="footer1">
-    <div class="footercont1">
-      <div class="footer1redbox"></div>
-      <div>FLEXBOX</div>
-    </div>
-  </div>
-
-<hr>
-
- <div class="footer2">
-  <div class="footer2boxes">
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-  </div>
-  
-  <div>Copyright All rights reserved.</div>
- </div>
-</footer>
+    </footer>
 </body>
 </html>
